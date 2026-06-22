@@ -20,10 +20,18 @@ Second example per label and edge-case rules: see [planning.md](planning.md).
 
 ## Data collection
 
-- **Source:** TODO — r/soccer threads collected (which threads, date range)
-- **Process:** TODO — manual copy-paste, label per planning.md definitions
-- **Label distribution:** TODO — count per label
-- **3 difficult-to-label examples:** TODO — see planning.md Hard Edge Cases
+- **Source:** r/soccer (plus a handful of comments surfaced via r/Barca, r/psg crossposts). Comments were collected manually by copy-pasting from public threads — a mix of post-match threads, stats/record threads, club-crisis threads, and match-clip threads. Teams/topics span Barcelona, Real Madrid, Man Utd, Man City, Chelsea, Arsenal, Spurs, PSG, Bayern, Cape Verde/Uruguay — across La Liga, Premier League, Ligue 1, Champions League and the World Cup, to avoid the model memorizing a single club's vocabulary.
+- **Process:** Each comment was read individually and labeled by hand against the definitions in [planning.md](planning.md). Jokes, one-word replies, non-English comments, and bot/ad posts were skipped. Borderline cases were noted in the CSV `notes` column. Thread *type* was deliberately matched to label need — stats/crisis threads for `analysis`, clip/drama threads for `reaction` — to keep the classes balanced.
+- **Label distribution (195 examples):**
+
+  | Label | Count | Share |
+  |-------|-------|-------|
+  | analysis | 65 | 33% |
+  | hot_take | 65 | 33% |
+  | reaction | 65 | 33% |
+
+  Perfectly balanced — no label exceeds the 70% imbalance threshold.
+- **3 difficult-to-label examples:** documented with decisions in [planning.md](planning.md) (Hard Edge Cases). Summary: a values-based argument with no verifiable evidence (→ `hot_take`), a one-line claim backed by a real stat (→ `analysis`), and a fact-laden grievance screed (→ `hot_take`).
 
 ## Fine-tuning approach
 

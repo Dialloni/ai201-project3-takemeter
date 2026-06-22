@@ -38,11 +38,19 @@ An immediate **emotional response** to a specific event. Little to no argument �
 
 **Second boundary:** `reaction` vs `hot_take` — an emotional post that also contains an opinion ("Haaland trash 😭"). Rule: if the dominant content is a *feeling in the moment* tied to an event → `reaction`; if it's a *standing opinion/judgment* about a player/team → `hot_take`.
 
-*(Add 3+ real difficult examples here during annotation — what the post was, candidate labels, what I decided.)*
+**3 real difficult examples encountered during annotation:**
 
-1.
-2.
-3.
+1. **"Yes the World Cup is once in a lifetime... but becoming a father and seeing your child's birth goes far beyond that... he'd trade 10000 World Cup trophies to be there."** (Pierron thread)
+   - Candidate labels: `analysis` vs `hot_take`. It is clearly *reasoned* — it builds a case rather than just asserting.
+   - **Decision → `hot_take`.** The reasoning is values-based, not *verifiable evidence* (no stats, no match events). My rule: `analysis` requires specific, checkable evidence. A well-argued opinion with no verifiable facts is still a hot take. This was the single hardest recurring boundary.
+
+2. **"Lewandowski is a proper scorer. Top 10 at both Bayern and Barca."** (Lewa stats thread)
+   - Candidate labels: `reaction` vs `analysis`. Very short, almost a one-liner — feels like a `reaction`.
+   - **Decision → `analysis`.** Length isn't the criterion; *evidence is*. It makes a claim ("proper scorer") and backs it with a specific, verifiable fact (top 10 at both clubs). Short but load-bearing evidence = analysis.
+
+3. **"QSG's every victory being linked to sportswashing is fair... Ligue 1 killing their domestic competition, 0 ffp regulations, spending 200mil every summer for over a decade..."** (CL final thread)
+   - Candidate labels: `analysis` vs `hot_take`. It cites specifics (FFP, spending figures) like analysis, but reads as an angry screed.
+   - **Decision → `hot_take`.** The "evidence" is decorative/rhetorical — selected to fuel a grievance rather than to reason toward a conclusion. Per my edge-case rule (decorative vs load-bearing evidence), this is a hot take dressed in facts.
 
 ## 4. Data collection plan
 
