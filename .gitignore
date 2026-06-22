@@ -14,3 +14,8 @@ __pycache__/
 
 # tool cruft
 .claude-flow/
+
+# local ML env + training artifacts
+.venv/
+scripts/_trainer_out/
+__pycache__/
