@@ -1,0 +1,81 @@
+{
+  "test_set_size": 30,
+  "labels": [
+    "analysis",
+    "hot_take",
+    "reaction"
+  ],
+  "baseline": {
+    "model": "llama-3.3-70b-versatile",
+    "approach": "zero-shot, temp 0",
+    "accuracy": 0.6667,
+    "unparsed": 0,
+    "per_class": {
+      "analysis": {
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1-score": 0.7778
+      },
+      "hot_take": {
+        "precision": 0.8,
+        "recall": 0.4,
+        "f1-score": 0.5333
+      },
+      "reaction": {
+        "precision": 0.5294,
+        "recall": 0.9,
+        "f1-score": 0.6667
+      }
+    },
+    "macro_f1": 0.6593
+  },
+  "fine_tuned": {
+    "model": "distilbert-base-uncased",
+    "epochs": 10,
+    "learning_rate": 5e-05,
+    "batch_size": 16,
+    "accuracy": 0.6,
+    "per_class": {
+      "analysis": {
+        "precision": 0.5833,
+        "recall": 0.7,
+        "f1-score": 0.6364
+      },
+      "hot_take": {
+        "precision": 0.5,
+        "recall": 0.3,
+        "f1-score": 0.375
+      },
+      "reaction": {
+        "precision": 0.6667,
+        "recall": 0.8,
+        "f1-score": 0.7273
+      }
+    },
+    "macro_f1": 0.5795,
+    "confusion_matrix": {
+      "rows_true_cols_pred": [
+        "analysis",
+        "hot_take",
+        "reaction"
+      ],
+      "matrix": [
+        [
+          7,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          8
+        ]
+      ]
+    }
+  }
+}
