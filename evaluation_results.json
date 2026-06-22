@@ -34,17 +34,17 @@
     "epochs": 10,
     "learning_rate": 5e-05,
     "batch_size": 16,
-    "accuracy": 0.6,
+    "accuracy": 0.6333,
     "per_class": {
       "analysis": {
-        "precision": 0.5833,
+        "precision": 0.6364,
         "recall": 0.7,
-        "f1-score": 0.6364
+        "f1-score": 0.6667
       },
       "hot_take": {
-        "precision": 0.5,
-        "recall": 0.3,
-        "f1-score": 0.375
+        "precision": 0.5714,
+        "recall": 0.4,
+        "f1-score": 0.4706
       },
       "reaction": {
         "precision": 0.6667,
@@ -52,7 +52,7 @@
         "f1-score": 0.7273
       }
     },
-    "macro_f1": 0.5795,
+    "macro_f1": 0.6215,
     "confusion_matrix": {
       "rows_true_cols_pred": [
         "analysis",
@@ -66,8 +66,8 @@
           1
         ],
         [
-          4,
           3,
+          4,
           3
         ],
         [

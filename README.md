@@ -156,5 +156,4 @@ This is the gap the project is about: my labels encode *why* a take is good or b
 - `data/test_split.csv`, `data/test_predictions.csv` — locked test set + per-example predictions
 - `takemeter_local.ipynb` — the notebook I actually ran (commented, runs locally in VS Code)
 - `scripts/train_eval.py`, `scripts/baseline_groq.py` — script versions of the pipeline
-- `Copy_of_ai201_project3_takemeter_starter_clean.ipynb` — original Colab starter notebook
 - `evaluation_results.json`, `confusion_matrix.png` — evaluation outputs
