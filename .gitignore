@@ -1,0 +1,16 @@
+# Never commit secrets
+.env
+*.key
+groq_key*
+**/secrets*
+
+# OS junk
+.DS_Store
+
+# Python / Colab
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# tool cruft
+.claude-flow/
