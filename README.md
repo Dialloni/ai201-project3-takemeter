@@ -2,7 +2,10 @@
 
 Fine-tuned text classifier that rates the quality of "takes" in r/soccer, sorting posts into `analysis`, `hot_take`, or `reaction`.
 
-> Status: in progress. Sections marked TODO get filled as milestones complete.
+## Demo video
+
+- [Demo part 1](https://www.loom.com/share/889fff3888ec456ab15960f960089001)
+- [Demo part 2](https://www.loom.com/share/53a9a658bbf348eb9bbdf7d69b1eab4b)
 
 ## Community
 
